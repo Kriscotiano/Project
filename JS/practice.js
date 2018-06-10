@@ -34,6 +34,10 @@ class Nurse extends HospitalEmployee {
     super(name, certifications);
     this._powa = powa;
     }
+
+    get powa() {
+        return this._powa;
+    }
 }
 
 class Doctor extends HospitalEmployee {
@@ -47,7 +51,7 @@ class Doctor extends HospitalEmployee {
     }
 }
 
-let nurseOla = new Nurse('Ola', ['Trauma', ' Pediatrics'], 'POWA');
+let nurseOla = new Nurse('Ola', ['Trauma', ' Pediatrics'], 'POWA UP');
 let doctorOrtiz = new Doctor('Kristiano', ['Trauma', ' Optometry'], 'giggle');
 
 nurseOla.takeVacation(10);
